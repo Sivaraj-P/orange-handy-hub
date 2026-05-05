@@ -6,22 +6,25 @@ const Header = () => {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center space-x-2">
           <img 
-            src="/lovable-uploads/66577fed-6f64-4492-9b22-e4e378b03ffc.png" 
+            src="/lovable-uploads/logo1.png" 
             alt="Man Power Logo" 
-            className="h-10 w-auto"
+            className="h-12 w-auto rounded-lg"
           />
         </div>
         
         <nav className="hidden md:flex items-center space-x-8">
+           <a href="/" className="text-foreground hover:text-primary transition-colors">
+            Home
+          </a>
           <a href="#features" className="text-foreground hover:text-primary transition-colors">
             Features
           </a>
           <a href="#how-it-works" className="text-foreground hover:text-primary transition-colors">
             How It Works
           </a>
-          <a href="#testimonials" className="text-foreground hover:text-primary transition-colors">
+          {/* <a href="#testimonials" className="text-foreground hover:text-primary transition-colors">
             Testimonials
-          </a>
+          </a> */}
         </nav>
 
         <Button className="bg-gradient-to-r from-primary to-primary-light hover:from-primary-dark hover:to-primary shadow-lg">

@@ -1,13 +1,13 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Shield, Eye, Lock, Database, Camera } from "lucide-react";
+import { Shield, Eye, Lock, Database, Camera, Users, FileText, AlertTriangle, Baby, UserCheck } from "lucide-react";
 
 const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
+
       <div className="container py-16">
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="text-center space-y-4">
@@ -15,182 +15,250 @@ const PrivacyPolicy = () => {
               Privacy <span className="text-primary">Policy</span>
             </h1>
             <p className="text-xl text-muted-foreground">
-              Last updated: January 2024
+              Last updated: January 2025 · India Compliant (DPDP Act, 2023)
             </p>
           </div>
 
           <div className="grid gap-6">
+
+            {/* 1. Introduction */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <FileText className="h-6 w-6 text-primary" />
+                  Introduction
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p className="text-muted-foreground leading-relaxed">
+                  This Privacy Policy describes how we collect, use, store, and disclose user information when you use our platform ("Service").
+                </p>
+                <p className="text-muted-foreground leading-relaxed">
+                  By using our platform, you agree to the collection and use of information in accordance with this policy.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* 2. Information We Collect */}
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Database className="h-6 w-6 text-primary" />
-                  Data Collection & Usage
+                  Information We Collect
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <h3 className="text-lg font-semibold">Personal Information We Collect</h3>
+                <h3 className="text-lg font-semibold">Basic Information</h3>
                 <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                  <li>Name, email address, and phone number</li>
-                  <li>Location information for service matching</li>
-                  <li>Profile photos and identification documents (for workers)</li>
-                  <li>Payment information and transaction history</li>
-                  <li>Communication records between users and workers</li>
-                  <li>Device information and app usage analytics</li>
+                  <li>Name</li>
+                  <li>Email address</li>
+                  <li>Phone number</li>
                 </ul>
 
-                <h3 className="text-lg font-semibold">How We Use Your Information</h3>
+                <h3 className="text-lg font-semibold">Professional / Work Information</h3>
                 <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                  <li>Facilitate connections between users and workers</li>
-                  <li>Verify worker credentials and maintain platform safety</li>
-                  <li>Process payments and manage transactions</li>
-                  <li>Provide customer support and resolve disputes</li>
-                  <li>Improve our services and user experience</li>
-                  <li>Send important updates and notifications</li>
+                  <li>Work details</li>
+                  <li>Work description</li>
+                  <li>Salary details</li>
+                </ul>
+
+                <h3 className="text-lg font-semibold">Personal Information</h3>
+                <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                  <li>Gender</li>
+                  <li>Age</li>
+                  <li>Address</li>
+                  <li>Location</li>
+                </ul>
+
+                <h3 className="text-lg font-semibold">Media & Content</h3>
+                <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                  <li>Profile photos</li>
+                  <li>Work-related images</li>
                 </ul>
               </CardContent>
             </Card>
 
+            {/* 3. Publicly Visible Information */}
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
-                  <Camera className="h-6 w-6 text-primary" />
-                  Images & Media Content
+                  <AlertTriangle className="h-6 w-6 text-primary" />
+                  Publicly Visible Information
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <h3 className="text-lg font-semibold">Profile Images</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Users may upload profile photos to enhance their profiles. These images are visible to other users and help build trust within the community.
-                </p>
-
-                <h3 className="text-lg font-semibold">Portfolio & Work Images</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Workers can upload images of their previous work to showcase their skills. These images become part of their public portfolio on the platform.
-                </p>
-
-                <h3 className="text-lg font-semibold">Image Privacy & Rights</h3>
-                <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                  <li>You retain ownership of all images you upload</li>
-                  <li>By uploading, you grant Man Power license to display these images</li>
-                  <li>Images must not contain inappropriate or copyrighted content</li>
-                  <li>We may remove images that violate our community guidelines</li>
-                  <li>Images are stored securely and not shared with third parties</li>
-                </ul>
-
-                <h3 className="text-lg font-semibold">Image Storage & Security</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  All uploaded images are stored on secure servers with encryption. We implement industry-standard security measures to protect your visual content.
+                <div className="bg-yellow-50 dark:bg-yellow-950/20 border border-yellow-200 dark:border-yellow-800 rounded-lg p-4">
+                  <p className="text-sm font-semibold text-yellow-800 dark:text-yellow-400 mb-2">⚠️ Important Notice</p>
+                  <p className="text-muted-foreground leading-relaxed">
+                    By using this platform, you understand and agree that your profile information — including name, phone number, work details, images, etc. — may be visible to other users of the platform and may be accessed, viewed, and interacted with by other users.
+                  </p>
+                </div>
+                <p className="text-muted-foreground leading-relaxed font-medium">
+                  👉 You are responsible for the information you choose to share.
                 </p>
               </CardContent>
             </Card>
 
+            {/* 4. Purpose of Data Collection */}
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Eye className="h-6 w-6 text-primary" />
-                  Communication & Monitoring
+                  Purpose of Data Collection
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <h3 className="text-lg font-semibold">Communication Privacy</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Direct communication between users and workers is private and encrypted. However, we may monitor communications to ensure compliance with our guidelines and maintain platform safety.
-                </p>
-
-                <h3 className="text-lg font-semibold">Automated Monitoring</h3>
+                <p className="text-muted-foreground leading-relaxed">We collect and use your data for:</p>
                 <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                  <li>Automated systems scan for prohibited content and behavior</li>
-                  <li>Suspicious activities are flagged for manual review</li>
-                  <li>Communications may be reviewed in case of reported violations</li>
-                  <li>Data is used to improve our safety algorithms</li>
+                  <li>Creating and managing user profiles</li>
+                  <li>Connecting users with work opportunities</li>
+                  <li>Displaying user profiles publicly</li>
+                  <li>Improving platform functionality</li>
+                  <li>Communication and support</li>
+                  <li>Preventing fraud and misuse</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* 5 & 6. Legal Basis & Consent */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <UserCheck className="h-6 w-6 text-primary" />
+                  Legal Basis & Consent
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <h3 className="text-lg font-semibold">Legal Basis (As per Indian Law)</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Under applicable Indian laws (including the DPDP Act, 2023), we process your data based on:
+                </p>
+                <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                  <li>Your consent</li>
+                  <li>Platform legitimate use (service delivery)</li>
                 </ul>
 
-                <h3 className="text-lg font-semibold">Communication Records</h3>
+                <h3 className="text-lg font-semibold">Consent</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  We retain communication records for safety, dispute resolution, and legal compliance purposes. Records may be accessed by authorized personnel when necessary.
+                  By registering and using the platform, you provide explicit consent for data collection, data processing, and public display of your information. You may withdraw consent by deleting your account.
                 </p>
               </CardContent>
             </Card>
 
+            {/* 7 & 8. Data Sharing & Sensitive Data */}
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Shield className="h-6 w-6 text-primary" />
-                  Data Protection & Rights
+                  Data Sharing & Sensitive Data Handling
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <h3 className="text-lg font-semibold">Your Privacy Rights</h3>
-                <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                  <li>Access your personal data and know how it's used</li>
-                  <li>Request correction of inaccurate or incomplete data</li>
-                  <li>Request deletion of your account and associated data</li>
-                  <li>Opt-out of non-essential communications</li>
-                  <li>Data portability - receive a copy of your data</li>
-                </ul>
-
-                <h3 className="text-lg font-semibold">Data Sharing</h3>
+                <h3 className="text-lg font-semibold">Data Sharing & Disclosure</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  We do not sell your personal data. Information may be shared only with:
+                  We do not sell personal data. We may share data only:
                 </p>
                 <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                  <li>Other users (profile information, ratings, reviews)</li>
-                  <li>Service providers who help operate the platform</li>
-                  <li>Legal authorities when required by law</li>
-                  <li>Business partners only with your explicit consent</li>
+                  <li>With other users (as part of platform functionality)</li>
+                  <li>With service providers (hosting, analytics, etc.)</li>
+                  <li>When required by law or government authorities</li>
                 </ul>
 
-                <h3 className="text-lg font-semibold">Data Retention</h3>
+                <h3 className="text-lg font-semibold">Sensitive Data Handling ⚠️</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  We retain your data as long as your account is active or as needed to provide services. After account deletion, some data may be retained for legal and safety purposes.
+                  Some data (like salary, location, images) may be considered sensitive. We:
                 </p>
+                <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                  <li>Limit access to authorized systems</li>
+                  <li>Use reasonable security practices</li>
+                  <li>Do not collect unnecessary sensitive data</li>
+                </ul>
               </CardContent>
             </Card>
 
+            {/* 9 & 10. Security & Retention */}
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Lock className="h-6 w-6 text-primary" />
-                  Security Measures
+                  Data Storage, Security & Retention
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <h3 className="text-lg font-semibold">Data Security</h3>
+                <h3 className="text-lg font-semibold">Security Measures</h3>
                 <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                  <li>End-to-end encryption for sensitive communications</li>
-                  <li>Secure servers with regular security audits</li>
-                  <li>Multi-factor authentication options</li>
-                  <li>Regular data backups and disaster recovery plans</li>
-                  <li>Employee access controls and training</li>
+                  <li>Secure servers</li>
+                  <li>Encryption (where applicable)</li>
+                  <li>Access control mechanisms</li>
                 </ul>
+                <p className="text-muted-foreground leading-relaxed text-sm italic">
+                  However, no system is 100% secure.
+                </p>
 
-                <h3 className="text-lg font-semibold">Breach Notification</h3>
+                <h3 className="text-lg font-semibold">Data Retention</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  In the unlikely event of a data breach, we will notify affected users within 72 hours and take immediate steps to secure the platform and protect user data.
+                  We retain your data as long as your account is active, or as required by law. You can request deletion at any time.
                 </p>
               </CardContent>
             </Card>
 
+            {/* 11. User Rights */}
             <Card>
               <CardHeader>
-                <CardTitle>Contact & Updates</CardTitle>
+                <CardTitle className="flex items-center gap-2">
+                  <Users className="h-6 w-6 text-primary" />
+                  Your Rights (DPDP Act, 2023)
+                </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <h3 className="text-lg font-semibold">Privacy Concerns</h3>
+                <p className="text-muted-foreground leading-relaxed">You have the right to:</p>
+                <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                  <li>Access your data</li>
+                  <li>Correct inaccurate data</li>
+                  <li>Delete your data</li>
+                  <li>Withdraw consent</li>
+                  <li>File a grievance</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* 12. Children's Privacy */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Baby className="h-6 w-6 text-primary" />
+                  Children's Privacy
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
                 <p className="text-muted-foreground leading-relaxed">
-                  For privacy-related questions or concerns, contact our Data Protection Officer at:
+                  Our platform is not intended for users under 18 years of age. We do not knowingly collect data from minors.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* 13. Grievance Officer + Contact */}
+            <Card>
+              <CardHeader>
+                <CardTitle>Grievance Officer & Contact</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <h3 className="text-lg font-semibold">Grievance Officer (Mandatory – Indian Law)</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  As per Indian law, you may raise concerns with our Grievance Officer:
                   <br />
-                  Email: privacy@manpower.com
+                  <span className="font-medium">Email:</span> manpowerindiasky2024@gmail.com
                   <br />
-                  Phone: +1 (555) 123-4567
+                  <span className="font-medium">Response Time:</span> Within 30 days
                 </p>
 
                 <h3 className="text-lg font-semibold">Policy Updates</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  We may update this privacy policy periodically. Users will be notified of significant changes via email or app notification.
+                  We may update this Privacy Policy from time to time. Users will be notified of major changes via email or app notification.
                 </p>
               </CardContent>
             </Card>
+
           </div>
         </div>
       </div>
