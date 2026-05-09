@@ -10,16 +10,17 @@ const Footer = () => {
             <img
               src="/lovable-uploads/logo1.png"
               alt="Man Power Logo"
-              className="h-10 w-auto rounded-lg"
+              className="h-20 w-auto rounded-lg"
             />
-            <p className="text-secondary-foreground/80 leading-relaxed">
+            <p className="text-secondary-foreground/80 leading-relaxed pb-2">
               Connecting skilled workers with customers directly, without any intermediaries.
             </p>
-
+            <a href="https://play.google.com/store/apps/details?id=com.manpower.manpower2024" target="blank" >
             <Button className="bg-primary hover:bg-primary-dark text-primary-foreground">
               <Play className="mr-2 h-4 w-4" />
               Available now on Play Store
             </Button>
+            </a>
           </div>
 
           <div className="space-y-6">

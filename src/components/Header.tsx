@@ -26,10 +26,11 @@ const Header = () => {
             Testimonials
           </a> */}
         </nav>
-
+        <a href="https://play.google.com/store/apps/details?id=com.manpower.manpower2024" target="blank" >
         <Button className="bg-gradient-to-r from-primary to-primary-light hover:from-primary-dark hover:to-primary shadow-lg">
           Download App
         </Button>
+        </a>
       </div>
     </header>
   );
